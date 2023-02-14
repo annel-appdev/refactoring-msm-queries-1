@@ -82,7 +82,7 @@
     </th>
   </tr>
 
-<%# FIRST ROUND %>
+<%# FIRST ATTEMPT %>
   <%# the_id = @the_director.id %>
 
   <%# matching_movies = Movie.where({ :director_id => the_id }) %>
@@ -93,11 +93,11 @@
 
   <%# films.each do |a_movie| %>
 
-<%# SECOND ROUND %>
+<%# SECOND ATTEMPT %>
   <%# films = @the_director.filmography.order({ :year => :asc }) %>
   <%# films.each do |a_movie| %>
 
-<%# FINAL ROUND %>
+<%# FINAL ATTEMPT %>
 <% films = @the_director.filmography.order(:year).each do |a_movie| %>
   <tr>
     <td>

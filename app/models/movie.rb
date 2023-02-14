@@ -22,7 +22,11 @@ class Movie < ApplicationRecord
 
     director = matching_directors.at(0) 
     
-   return director
-
+  return director
   end
+
+  def characters
+  return Character.where(movie_id => self.id)
+  end
+
 end
